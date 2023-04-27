@@ -11,7 +11,9 @@ class Header extends HTMLElement {
               <img src="assets/scs-unitmark.png" width="200" height="37" class="d-inline-block align-top" alt="">
             </a>
             <div class="justify-content-end">
-              <img src="assets/healthicons_ui-user-profile.png" width="37" height="37" class="d-inline-block align-top" alt="">
+              <span class="material-symbols-outlined" style="font-size:45px;color: #999999;">
+              account_circle
+              </span>
             </div>
           </nav>
         </header>
