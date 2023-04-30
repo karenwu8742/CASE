@@ -573,8 +573,88 @@
         </div>
 
         <div class="card pt-5 pb-5">
-            <h3>CONFIRM EQUIPMENT INFORMATION</h3>
-            <h4>Hostname*</h4>
+          <h3>CONFIRM EQUIPMENT INFORMATION</h3>
+          <br>
+          <h4>Hostname*</h4>
+          <div class="input-group mb-3 pb-5">
+            <label class="mr-3 col-form-label" for="requested-hostname" style="margin-left: 20px;"
+              >Requested Hostname:</label
+            >
+            <input
+              type="text"
+            /> . 
+            <input
+              type="text"
+            /> . 
+            <select name="email" id="email">
+              <option value="cs.cmu.edu">cs.cmu.edu</option>
+              <option value="andrew.cmu.edu">andrew.cmu.edu</option>
+              <option value="gmail.com">gmail.com</option>
+            </select>
+            <h4>OR
+            <button style="border-radius: 25px;">Generate hostname for me</button>
+            </h4>
+          </div>
+          <h4>Hardware (MAC) Address (if known)</h4>
+          <div class="input-group mb-3 pb-5">
+            <input
+              type="text" style="margin-left: 20px;"
+            />
+          </div>
+          <h4>Manufacturer*</h4>
+          <div class="input-group mb-3 pb-5">
+            <select name="manufacturer" id="manufacturer" style="margin-left: 20px;">
+              <option value="apple">Apple</option>
+              <option value="lg">LG</option>
+              <option value="samsung">Samsung</option>
+              <option value="hp">HP</option>
+              <option value="Dell">Dell</option>
+            </select>
+          </div>
+          <h4>Product Line*</h4>
+          <div class="input-group mb-3 pb-5">
+            <input
+              type="text" style="margin-left: 20px;"
+            />
+          </div>
+          <h4>Model*</h4>
+          <div class="input-group mb-3 pb-5">
+            <input
+              type="text" style="margin-left: 20px;"
+            />
+          </div>
+          <h4>Machine Type*</h4>
+          <div class="input-group mb-3 pb-5">
+            <input
+              type="text" style="margin-left: 20px;"
+            />
+          </div>
+          <h4>Requested Base OS*</h4>
+          <div class="input-group mb-3 pb-5">
+            <input
+              type="text" style="margin-left: 20px;"
+            />
+          </div>
+          <h4>Please enter any additional installation-related information or preferences:</h4>
+          <input
+              type="text" style="width: 70%; height:50px; margin-left: 20px;"
+          />
+          <div style="overflow: auto">
+            <div style="float: left">
+              <button
+                type="button"
+                class="back-btn ml-5"
+                onclick="nextPrev(-1)"
+              >
+                Back
+              </button>
+            </div>
+            <div style="float: right">
+              <button type="button" class="next-btn mr-5" onclick="nextPrev(1)">
+                Next
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -667,6 +747,51 @@
 
         <div class="card pt-5 pb-5">
           <h3>CONTACTS</h3>
+          <p class="information">You must define more than one person as a contact.</p>
+          <h4>Primary User*</h4>
+          <div class="input-group mb-3 pb-5">
+            <input
+              type="text" style="margin-left: 20px;"
+            />
+          </div>
+          <h4>Project Contact*</h4>
+          <div class="input-group mb-3 pb-5">
+            <input
+              type="text" style="margin-left: 20px;"
+            />
+          </div>
+          <h4>Equipment Contact*</h4>
+          <div class="input-group mb-3 pb-5">
+            <input
+              type="text" style="margin-left: 20px;"
+            />
+          </div>
+          <h4>Department*</h4>
+          <div class="input-group mb-3 pb-5">
+            <input
+              type="text" style="margin-left: 20px;"
+            />
+          </div>
+          <h4>Additional Information</h4>
+          <input
+              type="text" style="width: 70%; height:50px; margin-left: 20px;"
+          />
+          <div style="overflow: auto">
+            <div style="float: left">
+              <button
+                type="button"
+                class="back-btn ml-5"
+                onclick="nextPrev(-1)"
+              >
+                Back
+              </button>
+            </div>
+            <div style="float: right">
+              <button type="button" class="next-btn mr-5" onclick="nextPrev(1)">
+                Next
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -687,7 +812,7 @@
                 class="material-symbols-outlined align-middle mr-2"
                 style="font-size: 1.3em; color: #941120"
               >
-                check-circle
+                check_circle
               </span>
               Contacts
             </span>
@@ -759,8 +884,13 @@
 
         <div class="card pt-5 pb-5">
           <h3>CHARGING SOURCE</h3>
+          <p class="information">Machine registration will not be processed without a valid Oracle string.</p>
+          <h4>Charge To*</h4>
+          <h4>OR</h4>
+
         </div>
       </div>
+
     </main>
     <footer-component></footer-component>
     <script src="script.js"></script>
