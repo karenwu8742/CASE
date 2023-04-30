@@ -1,26 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-html, body {
-    min-height: 100%;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  min-height: 100%;
+}
 
 main {
-    background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 
 .tab {
-    display: none;
-  }
+  display: none;
+}
 
 h1 {
   font-size: 2.5em;
+  margin-top: 7%;
 }
 
 h2 {
@@ -52,8 +54,8 @@ button.workflow-option {
   height: 82px;
   font-size: 1.5em;
   border-radius: 15px;
-  background-color: #FFFFFF;
-  border: 1px solid #D1D1D1;
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
 }
 
 button.back-btn {
@@ -61,8 +63,8 @@ button.back-btn {
   height: 60px;
   font-size: 1.25em;
   border-radius: 10px;
-  background-color: #FFFFFF;
-  border: 1px solid #D1D1D1;
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
   margin-top: 60%;
 }
 
@@ -71,15 +73,15 @@ button.next-btn {
   height: 60px;
   font-size: 1.25em;
   border-radius: 10px;
-  background-color: #991B1E;
-  color: #FFFFFF;
+  background-color: #991b1e;
+  color: #ffffff;
   border: none;
 
   margin-top: 60%;
 }
 
 button.arrow-btn {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
   margin-left: -35px;
 }
@@ -88,8 +90,13 @@ button.arrow-btn > img {
   height: 17px;
 }
 
+button:hover {
+  background-color: #a8a8a8;
+  cursor: pointer;
+}
+
 div.card {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
 }
@@ -106,22 +113,18 @@ p.information {
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
 div.init-progress-bar {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;  
+  border-radius: 10px;
 }
 
 .loader {
   border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #03121c; 
+  border-top: 16px solid #03121c;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -130,6 +133,21 @@ div.init-progress-bar {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+main {
+  position: relative;
+  min-height: 90vh;
+}
+
+footer-component {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
