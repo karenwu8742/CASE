@@ -30,10 +30,17 @@ h2 {
 
 h3 {
   text-align: left;
-  padding: 20px;
+  margin-left: 20px;
   font-size: 1em;
   font-weight: bold;
   color: #888888;
+}
+
+h4 {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 p {
@@ -90,6 +97,12 @@ div.card {
 p.label {
   font-size: 1em;
   text-decoration: underline;
+}
+
+p.information {
+  font-size: 1em;
+  text-align: left;
+  margin-left: 20px;
 }
 
 .material-symbols-outlined {
